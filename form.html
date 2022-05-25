@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud API</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">CRUD APPLICATION</h1>
+
+    <h2>Create User</h2>
+
+    <form action="/form" method="post">
+        UserId : <input type="text" name="userid"><br>
+        Name : <input type="text" name="username"><br>
+        DOB : <input type="text" name="dob"><br>
+        Profession : <input type="text" name="profession"><br>
+        <button type="submit">Create User</button>
+    </form>
+
+    <h2>Get User</h2>
+    <form action="/getUser" method="post">
+        UserId : <input type="text" name="useid"><br>
+        <button type="submit">GetUser</button>
+    </form>
+    
+
+    <h2>Delete User</h2>
+    <form action="/deleteUser" method="post">
+        UserId : <input type="text" name="usid"><br>
+        <button type="submit">Delete User</button>
+    </form>
+
+    <h2>Get AllUser</h2>
+    <form action="/getAllUser" method="post">
+        <button type="submit">Get AllUser</button>
+    </form>
+</body>
+</html>
